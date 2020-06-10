@@ -86,6 +86,8 @@ func initContent() {
 }
 
 func initContextMenu() {
+	contextMenu.setCompo(contextMenu)
+
 	rawContextMenu := Div().ID("app-context-menu")
 	rawContextMenu.(*htmlDiv).value = Window().
 		Get("document").
